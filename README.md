@@ -106,6 +106,16 @@ console.log( props );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]: define (and/or modify) object properties.
+-   [`@stdlib/utils/inherited-properties`][@stdlib/utils/inherited-properties]: return an array of an object's inherited property names and symbols.
+-   [`@stdlib/utils/properties`][@stdlib/utils/properties]: return an array of an object's own enumerable and non-enumerable property names and symbols.
+-   [`@stdlib/utils/property-names-in`][@stdlib/utils/property-names-in]: return an array of an object's own and inherited enumerable and non-enumerable property names.
+-   [`@stdlib/utils/property-symbols-in`][@stdlib/utils/property-symbols-in]: return an array of an object's own and inherited symbol properties.
+
 </section>
 
 <!-- /.related -->
@@ -168,6 +178,20 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-properties-in/main/LICENSE
 
 [@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils-define-properties
+
+[@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils-inherited-properties
+
+[@stdlib/utils/properties]: https://github.com/stdlib-js/utils-properties
+
+[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils-property-names-in
+
+[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in
+
+<!-- </related-links> -->
 
 </section>
 
