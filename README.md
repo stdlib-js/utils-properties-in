@@ -24,38 +24,30 @@ limitations under the License.
 
 > Return an array of an object's own and inherited property names and [symbols][@stdlib/symbol/ctor].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-properties-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-propertiesIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-properties-in@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var propertiesIn = require( 'path/to/vendor/umd/utils-properties-in/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-properties-in@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.propertiesIn;
-})();
-</script>
+var propertiesIn = require( '@stdlib/utils-properties-in' );
 ```
 
 #### propertiesIn( obj )
@@ -83,15 +75,10 @@ var props = propertiesIn( [] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-properties-in@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
+var Symbol = require( '@stdlib/symbol-ctor' );
+var propertiesIn = require( '@stdlib/utils-properties-in' );
 
 var hasSymbols = hasSymbolSupport();
 
@@ -111,11 +98,6 @@ if ( hasSymbols ) {
 var obj = new Foo();
 var props = propertiesIn( obj );
 // returns [ 'a', 'foo', ... ]
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -130,11 +112,11 @@ var props = propertiesIn( obj );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]</span><span class="delimiter">: </span><span class="description">define (and/or modify) object properties.</span>
--   <span class="package-name">[`@stdlib/utils/inherited-properties`][@stdlib/utils/inherited-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited property names and symbols.</span>
--   <span class="package-name">[`@stdlib/utils/properties`][@stdlib/utils/properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable and non-enumerable property names and symbols.</span>
--   <span class="package-name">[`@stdlib/utils/property-names-in`][@stdlib/utils/property-names-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable and non-enumerable property names.</span>
--   <span class="package-name">[`@stdlib/utils/property-symbols-in`][@stdlib/utils/property-symbols-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited symbol properties.</span>
+-   <span class="package-name">[`@stdlib/utils-define-properties`][@stdlib/utils/define-properties]</span><span class="delimiter">: </span><span class="description">define (and/or modify) object properties.</span>
+-   <span class="package-name">[`@stdlib/utils-inherited-properties`][@stdlib/utils/inherited-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils-properties`][@stdlib/utils/properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable and non-enumerable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils-property-names-in`][@stdlib/utils/property-names-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable and non-enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils-property-symbols-in`][@stdlib/utils/property-symbols-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited symbol properties.</span>
 
 </section>
 
@@ -209,19 +191,19 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-properties-in/main/LICENSE
 
-[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor/tree/umd
+[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils-define-properties/tree/umd
+[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils-define-properties
 
-[@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils-inherited-properties/tree/umd
+[@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils-inherited-properties
 
-[@stdlib/utils/properties]: https://github.com/stdlib-js/utils-properties/tree/umd
+[@stdlib/utils/properties]: https://github.com/stdlib-js/utils-properties
 
-[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils-property-names-in/tree/umd
+[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils-property-names-in
 
-[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in/tree/umd
+[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in
 
 <!-- </related-links> -->
 
